@@ -1,0 +1,22 @@
+name: Test Sprinterns
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Random Message
+        run: echo "This is a random message"
+      - name: Echo Another Random Message
+        run: echo "Springterns are awesome"
+  xyz:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Echo Random Message
+       run: echo "This is a random message"
+     - name: Echo Another Random Message
+       run: echo "Springterns are awesome"
+ 
+     - name: Echo Another Random Message
+       run: echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
+
