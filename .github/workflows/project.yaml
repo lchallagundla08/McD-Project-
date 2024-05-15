@@ -11,15 +11,13 @@ jobs:
       - name: Echo Another Random Message
         run: echo "Springterns are awesome"
         
-  xyz:
+  Job-Summary:
    runs-on: ubuntu-latest
    steps:
-     - name: Echo Random Message
-       run: echo "This is a random message"
+     - name: link artifact lambda 
+       run: echo "jfrogbuildArtifact_lambda" >> $GITHUB_STEP_SUMMARY
        
-     - name: Echo Another Random Message
-       run: echo "Springterns are awesome"
+     - name: link artifact Docker
+       run: echo "jfrogbuildArtifact_docker" >> $GITHUB_STEP_SUMMARY
  
-     - name: Echo Another Random Message
-       run: echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
-
+     
